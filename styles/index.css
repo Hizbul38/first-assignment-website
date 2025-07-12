@@ -1,42 +1,71 @@
-
-.raleway-font {
+/* Fonts */
+body {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
 }
 
-/* nav style */
+/* Header styling */
+.header {
+  background-image: url('../Images/Hero-bg.png')
+}
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 50px 150px;
+.logo-text{
+  font-size: 30px;
+  font-weight: 800;
+  color: #6366f1;
 }
-.nav-title{
-    font-weight: 900;
-    font-size: 34px;
-    color: #4E47FF;
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 50px 0px;
 }
+
 nav ul li{
-    list-style: none;
+  list-style: none;
 }
 
-/* header style */
-.header{
-    background-image: url('../Images/Hero-bg.png');
+.nav-title {
+  font-size: 34px;
+  color: #6366f1;
+  margin: 0;
 }
-/* shared styles */
 
-.btn-primary, button{
-    background-color: #4E47FF;
-    font-weight: bold;
-    font-size: 16px;
-    color: #FFFFFF;
-    padding: 12px 36px;
-    border-radius: 10px;
-    border: none;
+/* Banner Content */
+.banner-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-title {
+  font-size: 65px;
+  font-weight: bold;
+
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
 }
 
 .action{
@@ -52,18 +81,18 @@ nav ul li{
 
 .action-title {
     font-weight: bold;
-    font-size: 42;
+    font-size: 45px;
     color: black;
 }
 .action-description {
-    font-size: 24;
+    font-size: 25px;
     color: #595866;
     font-style: normal;
 }
 .action-pic {
     width: 403;
     height: 328;
-    border-radius: 48;
+    border-radius: 48px;
 }
 
 /* banner style */
@@ -130,10 +159,139 @@ nav ul li{
     border-radius: 10px;
 }
 
+.review-title{
+  font-size: 30px;
+  font-weight: 700
+}
+
+.review-des{
+  font-size: 20px;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: 700;
+  color: #595866;
+}
+
+.item-date{
+  display: flex;
+  text-align: right;
+}
+
+.item-date ul li{
+  list-style: none;
+  text-align: left;
+  font-size: 18px;
+}
+
 main section{
     margin-top: 130px;
 }
 
-.name{
-    display: flex;
+/* Contact Section Styles */
+.contact-section {
+  background-color: #f5f7ff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3730a3;
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer .logo {
+  font-size: 70px;
+  font-weight: bold;
+  color: #3b3bff;
+  margin-bottom: 20px;
+}
+
+.footer .description {
+  font-size: 15px;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.footer-nav{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-nav a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
 }
